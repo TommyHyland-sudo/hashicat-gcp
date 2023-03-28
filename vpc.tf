@@ -1,9 +1,9 @@
-module "vpc" {
+module "network" {
     source  = "app.terraform.io/training-organisation/network/google"
     version = "3.4.0"
 
     project_id   = "p-o1j9sqaze7on-0"
-    network_name = "example-vpc"
+    network_name = "network-vpc"
     routing_mode = "GLOBAL"
 
     subnets = [
